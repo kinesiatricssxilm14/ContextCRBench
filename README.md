@@ -1,5 +1,5 @@
 #### Overview
-This repository contains the data and scripts for the ContextCRBench dataset.
+This repository contains the data and scripts for [ContextCRBench](https://arxiv.org/pdf/2511.07017).
 #### 🔗 Quick Links
 - Dataset Access: [data](https://drive.google.com/file/d/1pEvBisl0komPDG9Tb91B6L1SaR696Np2/view?usp=drive_link) (1.56G)
 - Raw Data Access: [raw data](https://drive.google.com/file/d/1v774ZN4K6izWiHC8Oug6yl_NOcZL4W-w/view?usp=sharing) (6.16G)
