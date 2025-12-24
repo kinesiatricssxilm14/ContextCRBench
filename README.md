@@ -81,3 +81,13 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
   - It is used to crawl the raw data from GitHub.
 - Experiment Script: [code_review_script](https://github.com/kinesiatricssxilm14/ContextCRBench/tree/main/code_review_script)
   - It runs the main experiments and ablation study.
+
+#### 📖Citation Format
+```
+@article{hu2025benchmarking,
+  title={Benchmarking LLMs for Fine-Grained Code Review with Enriched Context in Practice},
+  author={Hu, Ruida and Wang, Xinchen and Wen, Xin-Cheng and Zhang, Zhao and Jiang, Bo and Gao, Pengfei and Peng, Chao and Gao, Cuiyun},
+  journal={arXiv preprint arXiv:2511.07017},
+  year={2025}
+}
+```
