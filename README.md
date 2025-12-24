@@ -1,12 +1,11 @@
 #### Overview
 This repository contains the data and scripts for the ContextCRBench dataset.
 #### 🔗 Quick Links
-- Dataset Access: [data](https://drive.google.com/file/d/1pEvBisl0komPDG9Tb91B6L1SaR696Np2/view?usp=drive_link)
-- Raw Data Access: [raw data](https://drive.google.com/file/d/1v774ZN4K6izWiHC8Oug6yl_NOcZL4W-w/view?usp=sharing)
-- Experiment Results: [LLM results](https://drive.google.com/file/d/1UxA1OCJpBM5slACCeVCa3SG73svyZonR/view?usp=sharing)
+- Dataset Access: [data](https://drive.google.com/file/d/1pEvBisl0komPDG9Tb91B6L1SaR696Np2/view?usp=drive_link) (1.56G)
+- Raw Data Access: [raw data](https://drive.google.com/file/d/1v774ZN4K6izWiHC8Oug6yl_NOcZL4W-w/view?usp=sharing) (6.16G)
+- Experiment Results: [LLM results](https://drive.google.com/file/d/1UxA1OCJpBM5slACCeVCa3SG73svyZonR/view?usp=sharing) (72.7M)
 
 #### 📂 Data Structure
-Here is an overview of the directory and data structure:
 ```
 /
 ├── id                            # ID number
