@@ -218,7 +218,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 | typeorm/typeorm | https://github.com/typeorm/typeorm | 11k+ | 95%+ | 7238 | 11350 |
 | vitejs/vite | https://github.com/vitejs/vite | 19k+ | 80%+ | 1277 | 19690 |
 
-### Ruby (Not Presented in the Paper because the number after filtering is not enough)
+### Ruby (Not used in the paper because the number after filtering is not enough)
 
 | full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
