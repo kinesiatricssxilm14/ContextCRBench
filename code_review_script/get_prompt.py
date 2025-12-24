@@ -1,14 +1,14 @@
 import os
 import json
 
-# type = 1表示base
-# type = 2表示base + issue
-# type = 3表示base + pr
-# type = 4表示base + issue + pr
-# type = 5表示base + content_before
-# type = 6表示base + content_after
-# type = 7表示base + content_before + content_after
-# type = 8表示base + issue + pr + content_before + content_after
+# type = 1 is base
+# type = 2 is base + issue
+# type = 3 is base + pr
+# type = 4 is base + issue + pr
+# type = 5 is base + content_before
+# type = 6 is base + content_after
+# type = 7 is base + content_before + content_after
+# type = 8 is base + issue + pr + content_before + content_after
 
 with open('task1_prefix.txt', 'r') as r1:
     task1_prefix = r1.read()
@@ -19,12 +19,7 @@ with open('task2_prefix.txt', 'r') as r2:
 with open('task3_prefix.txt', 'r') as r3:
     task3_prefix = r3.read()
 
-# with open('task2_prefix_multiple.txt', 'r') as r4:
-#     task2_prefix_multiple = r4.read()
-
 def get_task(data, task_type=1, type=1):
-    # with open(json_path, 'r') as r1:
-    #     data = json.load(r1)
     system_prompt = ''
     res = ''
     if task_type == 1:
@@ -141,7 +136,7 @@ Note:
     if task_type == 2:
         res += 'The elements in the "lines" array can only be selected from the line markers below. No other formats or line markers are allowed; otherwise, they will not match.\n'
         id = data['id']
-        with open(f'/data00/rdhu/ASE_data/final_json/{id}.json', 'r') as r1:
+        with open(f'final_json/{id}.json', 'r') as r1:
             x = json.load(r1)
         all_line_number = x['all_line_number']
         res += json.dumps(all_line_number)
@@ -149,32 +144,18 @@ Note:
     res += 'Note: Only output the JSON result. Do not output any other text, explanation, or formatting!'
     return system_prompt, res
 
-# json_list = list()
-# root_path = '/data00/rdhu/ASE_data/final_json'
-# for file_path in [os.path.join(root_path, x) for x in os.listdir(root_path)]:
-#     print(file_path)
-#     with open(file_path, 'r') as r1:
-#         data = json.load(r1)
-#     json_list.append(file_path)
-
 
 prompt = dict()
 task = 1
 type = 8
 
-# with open('/data00/rdhu/ASE_data/sampled_unmerged_data_multiple_lines_task2.jsonl', 'r') as r1:
-#     lines = r1.readlines()
-# with open('/data00/rdhu/ASE_data/sampled_unmerged_data_single_lines_task2.jsonl', 'r') as r2:
-#     lines.extend(r2.readlines())
-with open('/data00/rdhu/ASE_data/run_llm/task1/final_task1.json', 'r') as r1:
+with open('final_task1.json', 'r') as r1:
     lines = r1.readlines()
 for line in lines:
     data = json.loads(line)
     id = data['id']
     prompt[id] = dict()
     prompt[id]['system_prompt'], prompt[id]['user_prompt'] = get_task(data, task, type)
-    # prompt[id]['ground_truth'] = data['review_comment']
-    # prompt[id]['ground_truth'] = data['comment_lines']
     prompt[id]['ground_truth'] = data['merged']
 
 if not os.path.exists(f'task{task}'):
