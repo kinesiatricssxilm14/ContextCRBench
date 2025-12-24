@@ -1,0 +1,45 @@
+You are a code reviewer. Your task is to analyze the given diff hunk, which has already been determined to contain defects and cannot be merged.
+There is exactly one line of code that is actually commented on, but your task is to rank the ten most suspicious lines (by their line markers), from most to least suspicious, according to your own judgment.
+Your ranking should be based on your suspicion that a line may contain a problem, considering code quality, potential issues, and functional completeness.
+You must carefully analyze both the code diff and any available surrounding context.
+The context may include, but is not limited to, the complete function, class, neighboring code, issue description, pull request description, or any other relevant information provided.
+If the context reveals any potential issues, conflicts, dependencies, code style problems, compatibility concerns, duplicate logic, or other risks related to the diff, you must take them into account in your decision.
+Your evaluation should be based on the provided diff hunk and any available context.
+You must output only one JSON in the following format and nothing else:
+{
+    "lines": ["[before1][after1]", "[before2][after2]", ..., "[before10][after10]"],
+    "reason": "XXX"
+}
+- Here, `lines` must be an array of exactly ten line markers (in the format "[before][after]"), each corresponding to a line at the beginning of the "The diff hunk with line number" section below, ranked from most to least suspicious.
+- You must not include any code or other content in the `lines` field—only the line markers as shown.
+- If there are fewer than ten lines in the diff hunk, list all available lines in order of suspicion.
+Please be as precise as possible and only output the ten lines you believe are most suspicious, in order. Do not output any other text, explanation, or formatting.
+Below are examples for your output (note: always output ten lines if possible):
+Example 1:
+{
+    "lines": ["[][2]", "[14][]", "[61][62]", "[2][1]", "[1][]", "[3][4]", "[5][6]", "[7][8]", "[9][10]", "[11][12]"],
+    "reason": "These lines are ranked by the likelihood of containing defects, based on code quality, logic, and context."
+}
+Example 2:
+{
+    "lines": ["[14][]", "[61][62]", "[2][1]", "[1][]", "[3][4]", "[5][6]", "[7][8]", "[9][10]", "[11][12]", "[13][14]"],
+    "reason": "The ranking reflects the degree of suspicion for each line, considering possible security risks, logic errors, and code style issues."
+}
+Example 3 (if only 3 lines in the diff hunk):
+{
+    "lines": ["[][2]", "[2][1]", "[1][]"],
+    "reason": "Only three lines are present; they are ranked by likelihood of containing the main defect."
+}
+You must not include any code or other content in the `line` field—only the line marker as shown.
+For example, if the "The diff hunk with line number" section is:
+
+[1][] line1
+[2][1] line2
+[][2] line3
+
+- If you want to select line1, your should add [1][]
+- If you want to select line2, your should add [2][1]
+- If you want to select line3, your should add [][2]
+
+You are not allowed to output any line marker that does not appear at the beginning of a line in the diff hunk, such as "[1][1]", "[2][]", or "[][1]".
+Now, analyze the provided diff hunk and its context, and provide your conclusion and reasons.

@@ -1,0 +1,21 @@
+You are a code reviewer. Your task is to analyze the given diff hunk, which has already been determined to contain defects and cannot be merged. A certain line of code has already been marked, and you need to write a review comment for this line to help developers make modifications based on your analysis. When analyzing, consider code quality, potential issues, and functional completeness.
+You must carefully analyze both the code diff and any available surrounding context.
+The context may include, but is not limited to, the complete function, class, neighboring code, issue description, pull request description, or any other relevant information provided.
+If the context reveals any potential issues, conflicts, dependencies, code style problems, compatibility concerns, duplicate logic, or other risks related to the diff, you must take them into account in your decision.
+Your evaluation should be based on the provided diff hunk and any available context.
+You must output only one line in the following JSON format and nothing else:
+{
+    "comment": "XXX"
+}
+Here, `comment` represents the content of your review for the marked lines. Your comment should be clear and actionable, helping developers understand what needs to be changed or improved.
+
+Below are example output formats:
+Example 1:
+{
+    "comment": "Could you include `Entity` in one of the derived queries? It's a very useful bit of functionality and isn't always obvious that it works the same way as querying for components."
+}
+Example 2:
+{
+    "comment": "It's already included in the first query example."
+}
+Below is the diff hunk with the lines to be commented. Please analyze and provide your conclusion.
