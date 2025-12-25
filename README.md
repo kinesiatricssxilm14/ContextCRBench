@@ -82,7 +82,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 - Experiment Script: [code_review_script](https://github.com/kinesiatricssxilm14/ContextCRBench/tree/main/code_review_script)
   - It runs the main experiments and ablation study.
 
-#### 📊Data Distribution
+#### 📊Raw Data Distribution
 ### C
 
 | full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
