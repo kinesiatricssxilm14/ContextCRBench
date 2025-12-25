@@ -85,7 +85,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 #### 📊Raw Data Distribution
 ### C
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | espressif/esp-idf | https://github.com/espressif/esp-idf | 15k+ | 95%+ | 6347 | 15619 |
 | micropython/micropython | https://github.com/micropython/micropython | 16k+ | 85%+ | 6747 | 16979 |
@@ -100,7 +100,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### C++
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | aseprite/aseprite | https://github.com/aseprite/aseprite | 15k+ | 90%+ | 2606 | 5069 |
 | duckdb/duckdb | https://github.com/duckdb/duckdb | 16k+ | 80%+ | 1256 | 16773 |
@@ -115,7 +115,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### C#
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | dotnet/aspnetcore | https://github.com/dotnet/aspnetcore | 61k+ | 90%+ | 28965 | 61087 |
 | duplicati/duplicati | https://github.com/duplicati/duplicati | 6k+ | 85%+ | 4407 | 6070 |
@@ -130,7 +130,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### Go
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | cli/cli | https://github.com/cli/cli | 10k+ | 95%+ | 2719 | 10650 |
 | cockroachdb/cockroach | https://github.com/cockroachdb/cockroach | 143k+ | 90%+ | 58398 | 143321 |
@@ -145,7 +145,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### Java
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | bazelbuild/bazel | https://github.com/bazelbuild/bazel | 25k+ | 80%+ | 12764 | 25652 |
 | elastic/elasticsearch | https://github.com/elastic/elasticsearch | 125k+ | 95%+ | 66906 | 125232 |
@@ -160,7 +160,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### JavaScript
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | expressjs/express | https://github.com/expressjs/express | 6k+ | 95%+ | 4500 | 6408 |
 | fastify/fastify | https://github.com/fastify/fastify | 6k+ | 90%+ | 2771 | 6020 |
@@ -175,7 +175,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### Python
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | apache/airflow | https://github.com/apache/airflow | 48k+ | 90%+ | 13417 | 48107 |
 | ansible/ansible | https://github.com/ansible/ansible | 84k+ | 85%+ | 73092 | 84880 |
@@ -190,7 +190,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### Rust
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | bevyengine/bevy | https://github.com/bevyengine/bevy | 18k+ | 90%+ | 1182 | 18473 |
 | meilisearch/meilisearch | https://github.com/meilisearch/meilisearch | 5k+ | 95%+ | 1153 | 5450 |
@@ -205,7 +205,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### TypeScript
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | angular/angular | https://github.com/angular/angular | 60k+ | 85%+ | 40290 | 60501 |
 | excalidraw/excalidraw | https://github.com/excalidraw/excalidraw | 9k+ | 90%+ | 2693 | 9289 |
@@ -220,7 +220,7 @@ This repository contains the data and scripts for [ContextCRBench](https://arxiv
 
 ### Ruby (Not used in the paper because the number after filtering is not enough)
 
-| full_name | link | issue# | programming purity | issue# after 2021 | last number till crawling |
+| full name | link | issue# | programming language purity | issue# after 2021 | last number till crawling |
 |---|---|---:|---:|---:|---:|
 | Homebrew/brew | https://github.com/Homebrew/brew | 19k+ | 90%+ | 10192 | 19572 |
 | chef/chef | https://github.com/chef/chef | 14k+ | 95%+ | 10811 | 14914 |
